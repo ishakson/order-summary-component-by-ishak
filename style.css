@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    /*COLORS*/
+    --pale-blue:hsl(255, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    /*FONT*/
+    --font-red-hat-display: "Red Hat Display", sans-serif;
+    /*weights: 500, 700, 900 size:16px*/
+
+}
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(229, 68%, 94%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-red-hat-display);
+    font-size: 16px;
+
+}
+.hero-img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card{
+    margin:5rem auto;
+    width:350px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.card-text{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color:var(--dark-blue)
+}
+
+.description{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+
+}
+.plan{
+    background-color: var(--very-pale-blue);
+    padding:15px;
+    width: 100%;
+    margin-top:15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+
+}
+.plan-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.plan-title{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+.plan-price{
+    font-size: 14px;
+    font-weight: 500;
+    
+    color: var(--desaturated-blue);
+
+}
+.music-icon-img{
+    width: 40px;
+}
+
+.plan a {
+    font-size: 12px;
+    font-weight: 700;
+}
+.plan a:hover{
+    cursor: pointer;
+    color:var(--desaturated-blue)
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+.payment{
+    padding: 14px 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bright-blue);
+    color:#fff;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 10px 15px -10px var(--bright-blue);
+}
+.payment:hover{
+    background-color: hsl(245, 47%, 63%);;
+    cursor: pointer;
+}
+.cancel{
+    border:none;
+    background-color: #fff;
+    padding: 15px 45px;
+    border: none;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: 14px;
+    color:hsl(222, 14%, 48%);
+    margin-bottom: -0.5rem;
+}
+.cancel:hover{
+    cursor: pointer;
+    color:hsl(219, 19%, 30%);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 375px){
+    .card{
+        margin:10px;
+        width: 90%;
+
+    }
+}
